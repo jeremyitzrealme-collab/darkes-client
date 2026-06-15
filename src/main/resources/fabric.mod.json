@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "darkes-client",
+  "version": "${version}",
+  "name": "Darkes Client",
+  "description": "A legitimate Minecraft Fabric client without cheats or ghost client features",
+  "authors": [
+    "jeremyitzrealme"
+  ],
+  "contact": {
+    "homepage": "https://github.com/jeremyitzrealme-collab/darkes-client",
+    "sources": "https://github.com/jeremyitzrealme-collab/darkes-client"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.darkesclient.DarkesClientEntrypoint"
+    ],
+    "client": [
+      "com.darkesclient.DarkesClientClientEntrypoint"
+    ]
+  },
+  "mixins": [
+    "darkes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": ">=0.100.0",
+    "minecraft": "${minecraft_version}"
+  }
+}
